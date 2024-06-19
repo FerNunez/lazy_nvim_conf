@@ -19,7 +19,8 @@ return {
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
         --rust
-        null_ls.builtins.formatting.rustfmt
+        --null_ls.builtins.formatting.rustfmt
+        --null_ls.builtins.formatting.rustfmt,
       },
     })
     vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format, {})

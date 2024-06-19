@@ -6,9 +6,6 @@ vim.cmd("set rnu")
 vim.cmd("set nu")
 vim.g.mapleader = " "
 
-vim.opt.smartindent = true
-vim.o.scrolloff = 8
-
 -- Sync clipboard between OS and Neovim. See `:help 'clipboard'`
 vim.o.clipboard = "unnamedplus"
 -- Enable break indent
@@ -19,7 +16,7 @@ vim.o.undofile = true
 -- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
+vim.opt.smartindent = true
 -- Keep signcolumn on by default
 vim.wo.signcolumn = "yes"
 
@@ -68,3 +65,4 @@ vim.opt.rtp:prepend(lazypath)
 
 -- includes
 require("lazy").setup("plugins")
+
